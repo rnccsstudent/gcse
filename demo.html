@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Search Engine</title>
+  <script async src="https://cse.google.com/cse.js?cx=replacewith_search_engine_id"></script>
+  <style>
+    /* Make the CSE container take up full width and height */
+    .gcse-search {
+      width: 100vw;  /* 100% of the viewport width */
+      height: 100vh; /* 100% of the viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Optional: Style the search box for full-width */
+    .gsc-control-cse {
+      width: 100%;  /* Ensure the search box takes full width */
+    }
+
+    /* Optional: Adjust the search results container */
+    .gsc-resultsbox-visible {
+      height: 80%;  /* Adjust this value as needed */
+      overflow-y: auto; /* Enable scrolling if the content overflows */
+    }
+  </style>
+</head>
+<body>
+  <div class="gcse-search"></div>
+</body>
+</html>
